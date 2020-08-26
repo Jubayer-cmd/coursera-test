@@ -1,0 +1,133 @@
+*{
+margin: 0;
+padding: 0%;
+}
+
+body{
+    background-color: #eeeeee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+
+    max-width: 1000px;
+    background-image: url(bgimg.jpg);
+    background-attachment: fixed;
+    margin: 0 auto;
+    padding:20px;
+}
+
+header{
+
+}
+
+.profile-pic{
+    height:120px ;
+    widows: 100px; ;
+    border:3px solid white;
+    border-radius:50%;
+    float: left;
+}
+
+.header-bio{
+float: left;
+padding: 25px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:lightslategray;
+}
+
+.header-contact{
+    float: right;
+    padding:30px;
+}
+.header-contact a{
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+.header-contact a:hover{
+    text-decoration: underline;
+    color:palevioletred;
+}
+
+.div-clear{
+    clear: both;
+}
+
+hr{
+    border:3px solid black;
+    width: 100%;
+    margin:20px auto;
+    border-bottom: none;
+}
+/*here strat the content writing*/
+
+/*personal section here*/
+#personal-section{
+
+}
+
+.content{
+margin-bottom: 30px;
+}
+
+.left-div{
+    width: 30%;
+    float: left;
+}
+
+.right-div{
+    width: 70%;
+    float: left;
+}
+
+.common-hr{
+    border:1px solid black;
+    width: 100%;;
+    margin:20px auto;
+    border-bottom: none; 
+}
+
+/*working section here*/
+#working-section{
+
+}
+/*key-section here*/
+#key-section{
+
+}
+/*education-section here*/
+#education-section{
+
+}
+/*------------
+edu-temp-left-right
+-------------*/
+.edu-temp-left{
+    float: left;
+    width: 50%;
+}
+.edu-temp-right{
+    float: right;
+    width: 50%;
+}
+/*------------
+footer style
+-------------*/
+.foot-demo{
+    background-color: black;
+    text-align: center;
+    padding:10px;
+}
+.foot-demo a{
+    color: white;
+    text-decoration: none;
+    margin:20px;
+}
+.foot-demo p{
+    color: white;
+    margin-top:10px;
+
+}
