@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        /* header start here */
+
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* ganjam start here */
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+        /* end here  */
+
+
+        #search {
+            background-image: url("images/search.png");
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: 8px 10px;
+            color: white;
+            font-size: 1rem;
+            padding: 15px 40px;
+            background-color: pink;
+            width: 150px;
+            transition: width 0.4s ease-in-out;
+            display: inline;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        #search:focus {
+            background-color: rgb(190, 116, 159);
+            width: 100%;
+        }
+
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            background-color:#aaa;
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: black ;
+        }
+
+
+        /*------------
+        footer style
+        -------------*/
+        .foot-demo {
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .foot-demo a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        .foot-demo p {
+            color: white;
+            margin-top: 10px;
+
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the website to see the effects</p>
+    </div><br>
+
+    <input type="text" name="search" id="search" placeholder="Search"><br>
+
+    <div class="dropdown">
+        <button class="dropbtn">LINK1</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">LINK2</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Link3</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown" style="float:right">
+        <button class="dropbtn">LINK4</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <!-- left column strat here -->
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TITTLE HEADING</h2>
+                <h5>Titlle description, 27 sept ,2020</h5>
+                <div class="fakeimg" style="height: 200px;">images</div>
+                <p>Some text</p>
+                <p>Weh wo treibt du gedanken dich so dich, sanft denkst du sie friedlich denkst du mein. Ist denkst
+                    teuren bist ward liebe, der gefärbt o klingt feuchten ankleiden rast ergötzt, im denkst du ja
+                    schnelle ja jedoch dahinten du. Der dich geschaut standeDolores gubergren stet sea et eirmod at nonumy et dolores sed. Sanctus clita diam diam aliquyam sit. Elitr takimata sit kasd no dolore dolor, et vero eos vero est takimata. Sit amet consetetur lorem diam, voluptua diam sed accusam eos accusam, dolor elitr sadipscing aliquyam et no no rebum, eos.st gestehe wo die o du, der du.</p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et doSea aliquyam voluptua diam ea et. Diam duo invidunt amet dolor lorem amet duo, amet justo sed erat duo amet, sed kasd et voluptua diam vero ipsum, dolor ipsum eirmod eirmod vero lorem consetetur vero eirmod ipsum. Amet sed amet sadipscing dolore nonumy eos, sit erat amet sea vero sea.lore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco.</p>
+            </div>
+        </div>
+
+        <!-- Right column start here -->
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">
+                    <p>Image</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Image</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Image</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="foot-demo">
+        <a href="https://www.facebook.com/skjubayer.islam/" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com/channel/UCeP8qeGkpPOvYjgUPdpTKxg?view_as=subscriber"
+            target="_blank">Youtube</a>
+        <a href="https://jubayer-cmd.github.io/coursera-test/site/index.html" target="_blank">Website</a>
+        <p>Copyright &copy; Sheikh Abu Jubayer 2020 <br> All rights recived</p>
+    </footer>
+
+</body>
+
+</html>
